@@ -1,5 +1,5 @@
 
-import React,  {useState, useEffect} from "react";
+import React,  {useState} from "react";
 
 const App = ()  => {
 const [addLists, setAddLists] = useState([]);
@@ -22,7 +22,7 @@ const[inputChange, setInputChange] = useState("")
     };
     
   return (      
-      <>
+      <div>
       <div className="bg_white">
           <input type="text"  
               value={inputChange}
@@ -50,7 +50,7 @@ const[inputChange, setInputChange] = useState("")
            </ul>
          
       </div>
-   </>
+   </div>
   );
 }
 export default App;
