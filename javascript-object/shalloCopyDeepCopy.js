@@ -7,45 +7,45 @@ const data = [
 
 // Shallow Copy Example
 
-//   const shalloCopyFun =  (project) => {
-//     return [...project]
-//   }
+  // const shalloCopyFun =  (project) => {
+  //   return [...project]
+  // }
 
 
-//   const projectNew = shalloCopyFun(data);
-//     console.log(projectNew);
+  // const projectNew = shalloCopyFun(data);
+  //   // console.log(projectNew);
     
-//   projectNew[0].type = "note Book";
+  // projectNew[0].type = "note Book";
 
-//   console.log("original data", data);
-//   console.log("updated data", projectNew);
+  // console.log("original data", data);
+  // console.log("updated data", projectNew);
 
 
 
   // deep copy function
 
 
-//   const deepCopyFun =  (project) => {
-//     // return structuredClone([...project]);
-//     return JSON.parse(JSON.stringify([...project]));   
-//   }
+  const deepCopyFun =  (project) => {
+    return structuredClone([...project]);
+    // return JSON.parse(JSON.stringify([...project]));   
+  }
 
 
-//   const projectNew1 = deepCopyFun(data);
-//     console.log(projectNew1);
+  const projectNew1 = deepCopyFun(data);
+    // console.log(projectNew1);
     
-//   projectNew1[0].type = "note Book";
+  projectNew1[0].type = "note Book";
 
-//   console.log("original data", data);
-//   console.log("updated data", projectNew1);
+  console.log("original data", data);
+  console.log("updated data", projectNew1);
   
   
 
 
-  const project1 = {
-    name: "Website Redesign",
-    tasks: ["Design UI", "Write content", "Deploy"]
-  };
+  // const project1 = {
+  //   name: "Website Redesign",
+  //   tasks: ["Design UI", "Write content", "Deploy"]
+  // };
 
 
 //   const shallowCopyObj = (project) => {
@@ -60,15 +60,15 @@ const data = [
 //   console.log(project2);
 
 
-const deepCopyObj = (project) => {
-        return structuredClone({...project});
-      }
+// const deepCopyObj = (project) => {
+//         return structuredClone({...project});
+//       }
     
-      const project2 = deepCopyObj(project1);
+//       const project2 = deepCopyObj(project1);
      
-      project2.tasks.push("write function")
+//       project2.tasks.push("write function")
       
-      console.log(project1);
-      console.log(project2);
+//       console.log(project1);
+//       console.log(project2);
   
   

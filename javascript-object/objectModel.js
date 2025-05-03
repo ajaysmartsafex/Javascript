@@ -13,7 +13,7 @@
     
 // }
 
-// // fetchApiData()
+
 
 // fetchApiData().then((data) => {
 //     console.log(data);
@@ -54,28 +54,28 @@ function promiceFun() {
 
 
 
-//   function promiceFun(){
+  // function promiceFun(){
   
-//     const promise = new Promise((resolved, rejected) => {
+  //   const promise = new Promise((resolved, rejected) => {
       
-//       const succes = true;
+  //     const succes = true;
      
-//         if (succes) {
-//           resolved({name: "ajay"})
-//         }else{
-//           rejected("data not get now")
-//         }
+  //       if (succes) {
+  //         resolved({name: "ajay"})
+  //       }else{
+  //         rejected("data not get now")
+  //       }
       
-//     });
+  //   });
     
-//     return promise;
+  //   return promise;
     
-//   }
+  // }
   
-//   promiceFun().then((data) => {
-//     console.log(data)
-//   }).catch((error) => {
-//     console.error(error)
-//   })
+  // promiceFun().then((data) => {
+  //   console.log(data)
+  // }).catch((error) => {
+  //   console.error(error)
+  // })
 
 

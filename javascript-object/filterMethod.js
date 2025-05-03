@@ -18,17 +18,17 @@ const data = [
   
   // first Method filter
   
-//   function filterData(data){
+  // function filterData(data){
   
-//     let book = data.filter((item) => item.type === "book")
-//     let video = data.filter((item) => item.type === "video")
+  //   let book = data.filter((item) => item.type === "book")
+  //   let video = data.filter((item) => item.type === "video")
     
-//     return {book, video};
+  //   return {book, video};
     
-//   }
+  // }
   
-//   const result = filterData(datav);
-//   console.log(result)
+  // const result = filterData(data);
+  // console.log(result)
 
 
 
@@ -44,9 +44,9 @@ const data = [
         return acc;        
     },{})
     
-  }
-  
-  const result = filterData(data);
+}
+ 
+const result = filterData(data);
 console.log(result)
 
 
