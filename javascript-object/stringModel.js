@@ -101,27 +101,24 @@ console.log(result); // "a3c3v1d3r1y2"
 
 
 
+let str = "bkjhkhcnjkndkjkhwfe";
 
+function frequency(str) {
+  const frequencyItem = {};
 
+  for (let char of str) {
+    frequencyItem[char] = (frequencyItem[char] || 0) + 1;
+  }
 
+  console.log(frequencyItem);
 
+  let stringOutput = '';
 
-// const nameStrings = "aaaccvdddryy";
+  for (let [k, v] of Object.entries(frequencyItem)) {
+    stringOutput += k + v;
+  }
 
-// function compression(nameStrings) {
-//     let output = "";
-//     let count = 1;
+  console.log(stringOutput);
+}
 
-//     for (let i = 0; i < nameStrings.length; i++) {
-//         if (nameStrings[i] === nameStrings[i + 1]) {
-//             count++;
-//         } else {
-//             output += nameStrings[i] + (count > 1 ? count : "");
-//             count = 1; // reset count AFTER pushing to output
-//         }
-//     }
-
-//     return output;
-// }
-
-// console.log(compression(nameString)); // Output: "a3c3vd4ry2"
+frequency(str);
