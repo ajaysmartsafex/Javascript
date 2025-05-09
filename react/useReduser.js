@@ -3,9 +3,9 @@
 import React, { useReducer } from 'react';
 
 function Counter() {
-    const [state, dispatch] = useReducer(reducer, initialState);
+const [state, dispatch] = useReducer(reducer, initialState);
     
-    const initialState = { count: 0 };
+const initialState = { count: 0 };
 
 function reducer(state, action) {
   switch (action.type) {
@@ -18,7 +18,7 @@ function reducer(state, action) {
   }
 }
 
-  return (
+return (
     <div>
       <h2>Count: {state.count}</h2>
       <button onClick={() => dispatch({ type: 'increment' })}>+</button>
