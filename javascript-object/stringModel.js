@@ -90,35 +90,151 @@ const nameString = "aaaccvdddryyca";
 
 
 
-const result = Object.entries(
-  [...nameString].reduce((acc, char) => {
-    acc[char] = (acc[char] || 0) + 1;
-    return acc;
-  }, {})
-).map(([k, v]) => k + v).join('');
+// const result = Object.entries(
+//   [...nameString].reduce((acc, char) => {
+//     acc[char] = (acc[char] || 0) + 1;
+//     return acc;
+//   }, {})
+// ).map(([k, v]) => k + v).join('');
 
-console.log(result); // "a3c3v1d3r1y2"
+// console.log(result); // "a3c3v1d3r1y2"
 
 
 
 let str = "bkjhkhcnjkndkjkhwfe";
 
-function frequency(str) {
-  const frequencyItem = {};
+// function frequency(str) {
+//   const frequencyItem = {};
 
-  for (let char of str) {
-    frequencyItem[char] = (frequencyItem[char] || 0) + 1;
-  }
+//   for (let char of str) {
+//     frequencyItem[char] = (frequencyItem[char] || 0) + 1;
+//   }
 
-  console.log(frequencyItem);
+//   console.log(frequencyItem);
 
-  let stringOutput = '';
+//   let stringOutput = '';
 
-  for (let [k, v] of Object.entries(frequencyItem)) {
-    stringOutput += k + v;
-  }
+//   for (let [k, v] of Object.entries(frequencyItem)) {
+//     stringOutput += k + v;
+//   }
 
-  console.log(stringOutput);
-}
+//   console.log(stringOutput);
+// }
 
-frequency(str);
+// frequency(str);
+
+
+
+
+
+
+
+
+
+
+
+// function freuencyItems(str){
+  
+//   let creObj = {};
+//   str.split("").forEach(function (elem){
+//     if(creObj.hasOwnProperty(elem) === false){
+//       creObj[elem] = 1;
+//     }else{
+//       creObj[elem] ++
+//     }
+//   })
+  
+//   console.log(creObj);
+//   let strArray = Object.entries({...creObj});
+//   console.log(strArray)
+//   console.log(strArray.map(([k]) => k))
+//   console.log(strArray.map(([k, v]) => v))
+//   console.log(strArray.map(([k, v]) => k + v))
+ 
+  
+// }
+
+// freuencyItems(str)
+
+
+
+// let strObj = str.split("").reduce((acc, curEle) => {
+//   if(!acc[curEle]){
+//     acc[curEle] = 1;
+//   }else{
+//     acc[curEle]++
+//   }
+
+//   return acc;
+
+// }, {})
+
+// console.log(Object.entries({...strObj}).map(([k, v]) => k + v).join(""))
+
+
+// function createObject(){
+//   let objStr = str.split("").reduce((acc, curEle) => {
+//     acc[curEle] = (acc[curEle] || 0 ) + 1;
+//     return acc
+//   },{})
+  
+//   console.log(Object.entries({...objStr}).map(([k, v]) => k + v).join(""))
+// }
+
+// createObject()
+
+
+// function createObject(str){
+//   let strObj = {};
+//   for(let char of str){
+     
+//       strObj[char] = (strObj[char] || 0) + 1;
+     
+     
+//   }
+//   console.log(Object.entries({...strObj}).map(([key, value]) => key + value).join(""))
+// }
+ 
+// createObject(str)
+ 
+ 
+//   function createObject(str){
+//   let strObj = {};
+//   for(let char of str){
+     
+//       if(!strObj[char]){
+//         strObj[char] = 1
+//       }else{
+//         strObj[char]++
+//       }
+     
+     
+//   }
+//   console.log(strObj)
+//   console.log(Object.entries({...strObj}).map(([key, value]) => key + value).join(""))
+// }
+ 
+// createObject(str)
+
+
+  function createObject(str){
+    
+   let strObj = {};
+   for(let char of str){
+     
+      if([...str].includes(char)){
+        strObj[char] = (strObj[char] || 0) + 1;
+      }
+     
+     
+   }
+   console.log(strObj)
+   console.log(Object.entries({...strObj}).map(([key, value]) => key + value).join(""))
+ }
+ 
+ createObject(str)
+ 
+ 
+ 
+ 
+
