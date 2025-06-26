@@ -1,20 +1,3 @@
-function TriangleFun (num) {
-  
-    for(let i = 0; i < num; i++){
-      // console.log(i)
-      let row = "";
-      for(let j = 1; j <= i; j++){
-        row += j + "";
-      }
-      
-      console.log(row);
-    }
-    
-  }
-  
-  TriangleFun(10);
-  
-  
   
   let arr = [1,2,2,3,4,4];
   
