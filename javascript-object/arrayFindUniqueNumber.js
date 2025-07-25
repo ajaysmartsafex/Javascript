@@ -25,7 +25,7 @@ for (let i = 0; i <= sortArray[sortArray.length - 1]; i++) {
 
 let missing = [];
 for (let i = minNumber; i <= maxNumber; i++) {
-  if (!sortedArr.includes(i)) {
+  if (!sortArray.includes(i)) {
     missing.push(i);
   }
 }
